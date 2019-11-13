@@ -1,9 +1,28 @@
 ---
-layout: blog
-title: "Let's Party"
-date: 1999-12-31 11:59:59 -0800
-thumbnail: "/images/prince.jpg"
-rating: 5
+title: Blog Post Four
+thumbnail: /uploads/7.png
 ---
+# Blog Post Four
 
-This is the post body, where I write about our last chance to party before the Y2K bug destroys us all.
+Changed AGAIN Content for **blog post four**. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique tenetur esse quis exercitationem porro fugiat? Explicabo asperiores repellendus odit fuga delectus vel ducimus corporis laborum, totam officiis. Quos, autem quam.
+
+_Italic_, **bold**, and `monospace`
+
+```js
+<script>
+  const foo = 'bar';
+  console.log(foo);
+</script>
+```
+
+Itemized lists look like:
+
+* this one
+* that one
+* the other one
+
+> Block quotes are
+> written like so.
+>
+> They can span multiple paragraphs,
+> if you like.
