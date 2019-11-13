@@ -1,4 +1,4 @@
-// This is where project configuration and plugin options are located. 
+// This is where project configuration and plugin options are located.
 // Learn more: https://gridsome.org/docs/config
 
 // Changes here require a server restart.
@@ -6,5 +6,30 @@
 
 module.exports = {
   siteName: 'Gridsome',
-  plugins: []
+  templates: {
+    Post: [
+      {
+        path: '/post/:year/:month/:title',
+        component: './src/templates/Post.vue'
+      }
+    ]
+  },
+  transformers: {
+    remark: {
+      externalLinksTarget: '_blank',
+      externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+      anchorClassName: 'icon icon-link',
+    }
+  },
+
+  plugins: [
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'blog/**/*.md',
+        typeName: 'Post',
+        remark: {}
+      }
+    }
+  ]
 }
